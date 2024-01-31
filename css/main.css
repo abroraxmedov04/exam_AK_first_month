@@ -1,0 +1,319 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* here i need to add some style before working with (js) */
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+:root {
+    --first-bg-color: #6457A6;
+    --second-bg-colr: #9DACFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--first-bg-color);
+}
+
+
+/* header */
+.header {
+    padding: 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: var(--second-bg-colr);
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.search-bar {
+    padding: 10px 10px;
+    width: 300px;
+    border-color: var(--first-bg-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-search-bar {
+    padding: 10px 10px;
+    border: none;
+    color: #FFF;
+    background: var(--first-bg-color);
+    border-radius: 5px;
+}
+
+
+/* main and cards */
+
+.main-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.main-card-movie {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+
+}
+
+.main-card-movie:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.movie__image {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.movie-info {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.movie__title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.movie__release {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.movie__genres {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.movie__overview {
+    padding: 10px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9em;
+    line-height: 1.4;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.main-card-movie:hover .movie__overview {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* here i need to add some style before working with (js) */
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+:root {
+    --first-bg-color: #6457A6;
+    --second-bg-colr: #9DACFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--first-bg-color);
+}
+
+
+/* header */
+.header {
+    padding: 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: var(--second-bg-colr);
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.search-bar {
+    padding: 10px 10px;
+    width: 300px;
+    border-color: var(--first-bg-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-search-bar {
+    padding: 10px 10px;
+    border: none;
+    color: #FFF;
+    background: var(--first-bg-color);
+    border-radius: 5px;
+}
+
+
+/* main and cards */
+
+.main-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.main-card-movie {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+
+}
+
+.main-card-movie:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.movie__image {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.movie-info {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.movie__title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.movie__release {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.movie__genres {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.movie__overview {
+    padding: 10px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9em;
+    line-height: 1.4;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.main-card-movie:hover .movie__overview {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
